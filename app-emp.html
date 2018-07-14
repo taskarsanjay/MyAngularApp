@@ -1,0 +1,23 @@
+<h1>{{ name }}</h1>
+<h1>Table for ngFor demo</h1>
+<ul>
+    <li *ngFor="let x of empdata" >
+        <h4>Name: {{x.name}}</h4> <h4>City: {{x.city}}</h4><h4>Salary: {{x.salary}}</h4>
+
+    </li>
+</ul><br><br><br>
+<hr>
+<div [ngSwitch]="myColor">
+    <h1>This is my Switch case Demo</h1>
+    <h4 *ngSwitchCase="'red'" style="color:red">This is my red color</h4>
+    <h4 *ngSwitchCase="'green'"  style="color:green">This is my green color</h4>
+    <h4 *ngSwitchCase="'blue'" style="color:blue">This is my blue color</h4>
+    <h4 *ngSwitchCase="'black'" style="color:black">This is my black color</h4>
+    <h4 *ngSwitchCase="'aqua'" style="color:aqua">This is my aqua color</h4>
+    <h4 *ngSwitchCase="'yellow'" style="color:yellow">This is my yellow color</h4>
+
+</div>
+<hr>
+<!--h1 customHover>This is custom dir</h1 this is dierct color code-->
+<h1 [customHover]="'green'">This is custom dir</h1>
+<button [customHover]="'blue'">This is custom dir input value</button>
